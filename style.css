@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: wheat;
+    color: white;
+    transform: scale(0.8);
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.card{
+    width: 1000px;
+    height: 370px;
+    /* margin: 50px auto 0 auto; */
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('bg.svg') center/cover no-repeat;
+    box-shadow: 0 0 20px #777575;
+    border-radius: 5px;
+}
+.card .body{
+    /* height: 250px; */
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.user__photo,
+.company__details{
+    width: 100%;
+}
+.user__photo{
+    text-align: center;
+    z-index: 99;
+}
+.company__details{
+    padding-left: 15px;
+    border-left: 2px solid #039BFF;
+}
+.sub__section{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.fields{
+    width: 100%;
+}
+.qrcode img{
+    width: 126px;
+    padding-left: 10px;
+}
+.user__photo img{
+    border-radius: 50%;
+    width: 300px;
+    margin-bottom: -120px;
+}
+.card__input{
+    display: flex;
+    align-items: center;
+    border: 1px solid #039BFF;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    color: #039BFF;
+    font-size: 16px;
+}
+.card__input:last-child{
+    margin-bottom: 0;
+}
+.card__input .card__input__prepend{
+    padding: 8px 12px;
+    background: #039BFF;
+    border-radius: 0 3px 3px 0;
+    color: #fff;
+}
+.card__input .card__input__info{
+    padding: 8px 12px;
+}
+.card .footer{
+    position: relative;
+    z-index: 99999;
+    height: 120px;
+    padding: 10px 40px;
+    border-radius: 20px 20px 0 0;
+    background: #039BFF;
+    display: flex;
+    box-shadow: 0 10px 20px #777575;
+    justify-content: space-between;
+    align-items: center;
+}
+.user__details{
+    display: flex;
+    align-items: center;
+}
+.brand__logo img{
+    width: 70px;
+    margin-right: 20px;
+}
+.name__role .name{
+    font-size: 37px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.name__role .role{
+    font-size: 22px;
+}
+.info{
+    position: relative;
+}
+.info .motto{
+    font-size: 28px;
+    margin-top: 40px;
+    font-weight: 200;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -65px;
+}
+.socials a:hover{
+    text-decoration: none;
+    background: #039BFF;
+    color: #fff;
+}
+.socials a {
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    color: #039BFF;
+    transition: all ease-in 0.3s;
+    border: 1px solid #039BFF;
+}
